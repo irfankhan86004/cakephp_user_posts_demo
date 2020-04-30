@@ -32,5 +32,6 @@ class LoginNotificationCommand extends Command
 		}
 
 		$io->out('Send mail to all users');
+		
     }
 }
