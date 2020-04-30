@@ -25,10 +25,10 @@ class LoginNotificationCommand extends Command
 			$email = new Email();
 				$email
 				->emailFormat('html')
-				->to('iamirfanwebdeveloper@gmail.com')
+				->to($value->email)
 				->from('info@gmail.com')
 				->subject('User login notification')
-				->send("Please click to login link <a href='http://127.0.0.1/tiger/tiger/users/'>Login</a> thank you ");
+				->send("Please click to login link <a href='#'>Login</a> thank you ");
 		}
 
 		$io->out('Send mail to all users');
